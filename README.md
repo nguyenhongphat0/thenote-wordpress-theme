@@ -1,0 +1,1 @@
+# thenote-wordpress-theme
