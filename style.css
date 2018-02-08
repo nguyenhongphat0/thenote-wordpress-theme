@@ -1,0 +1,170 @@
+/*
+Theme Name: The Note
+Author: PhatNH
+Author URI: https://nguyenhongphat0.github.io
+Description: The Note is a child theme of Kichu. It introduces a light, clean and yet colorful but still formal design based on the concept of the notebook's paper. We focus on responsive and mobile-first as the core of design pattern. Our purpose is to give our users a different experience in reading blog, making the blog more interesting.
+Version: 1.0.0
+Template: kichu
+Tags: one-column, two-columns, right-sidebar, left-sidebar, grid-layout, colorful, simple, clean, light, note, book, paper, responsive, mobile-first
+*/
+
+@import url("../kichu/style.css");
+
+/*
+ * Header: #20242C
+ * Background: #3B4252
+ * Primary: #88C0D0
+ * Success: #A3BE8C
+ * Warning: #EBCB8B
+ * Error: #BF616A
+ * Black: #2E3440
+ * White: #E5E9F0
+ */
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+* {
+	font-family: "Space Mono", monospace;
+	letter-spacing: -0.1ch;
+}
+
+body, 
+article, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	color: white;
+}
+
+body {
+	background-color: #2E3440;
+}
+
+article {
+	background-color: #3B4252;
+	border-top: 10px dashed #20242C;
+}
+
+header, #main {
+	background-color: #20242C;
+}
+
+#logo {
+	letter-spacing: 0.5ch;
+	text-transform: lowercase;
+}
+
+#logo::before {
+	content: ">";
+	font-size: 1.5em;
+}
+
+#logo::after {
+	content: "_";
+}
+
+#main {
+	padding-top: 150px;
+}
+
+header #showRightPush {
+	line-height: 180px;
+}
+
+header.smaller #showRightPush {
+	line-height: 75px !important;
+}
+
+header.smaller #showRightPush i {
+	font-size: 0.5em;
+}
+
+#hideRightPush {
+	background-color: #81A1C1;
+	color: #E5E9F0;
+	line-height: 150px;
+}
+
+#hideRightPush.smaller {
+	line-height: 60px;
+}
+
+.nav-menu {
+	background-color: #20242C;
+}
+
+#menu-navbar a {
+	border-bottom: none;
+}
+
+#menu-navbar a:hover {
+	background-color: #3B4252;
+}
+
+.credits {
+	background-color: #2E3440;
+}
+
+.comment-area {
+	background-color: #A3BE8C;
+	font-size: 0.8em;
+}
+
+.comment-area .avatar {
+	border-radius: 100%;
+}
+
+.comment-body {
+	border-top: 5px dashed #A3BE8C;
+	color: #2E3440;
+	margin-bottom: 0px;
+}
+
+.comment-body p::before {
+	content: '> '
+}
+
+.comment-respond {
+	background-color: #2E3440;
+}
+
+.comment-body a, .comment-body .comment-author .fn, .comment-body .comment-author .url, .comment-body .comment-reply-link, .comment-body .comment-reply-login, .comment-body .pingback .comment-body a, .comment-body .trackback .comment-body a {
+	color: #A3BE8C;
+}
+
+input.submit {
+	background-color: #A3BE8C;
+	border: none;
+}
+
+@media screen and (max-width: 767px) {
+	#logo {
+		font-size: 30px !important;
+	}
+
+	#main {
+		padding-top: 50px;
+	}
+
+	.comment-area .avatar {
+		left: -25px;
+		position: absolute;
+		top: 0;
+	}
+
+	.comment-area .comment-author {
+		display: block;
+		margin-left: 25px;
+	}
+
+	.comment-area .comment-body {
+		margin: 0px;
+	}
+
+	.comment-area .comment-meta {
+		font-size: 0.8em;
+		margin-top: 25px;
+		text-align: right;
+	}	
+}
